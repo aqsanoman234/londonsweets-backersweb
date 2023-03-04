@@ -1,0 +1,17 @@
+.heading1{
+    margin-top: 58%;
+    font-size: 4rem;
+    font-weight: bolder;
+
+}
+.card{
+    border: 10px solid rgb(119, 81, 32);
+    border-radius: 100px;
+    background-color: rgba(235, 178, 103, 0.952);
+}
+#card-btn:hover{
+    background-color: rgb(202, 149, 84) !important;
+}
+#banner-sweet{
+    border-style: double;
+}

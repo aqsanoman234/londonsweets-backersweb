@@ -1,0 +1,70 @@
+body{
+
+    background-image: url(../images/rustic-bread.jpg);
+    background-blend-mode:darken;
+    background-color:rgb(236, 194, 139); 
+}
+.container{
+    margin-top: 10%;
+}
+input{
+    padding: 5px;
+    margin-left: 5px;
+    background-color: rgb(228, 183, 129);
+    border-color: rgb(65, 32, 10);
+}
+textarea{
+    background-color: rgb(228, 183, 129);
+    border-color: rgb(65, 32, 10);
+}
+h3{
+    margin-right: 5%;
+    margin-top: 2%;
+}
+#form{
+    
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(201, 160, 109, 0.637);
+}
+#store{
+    border-radius: 20px;
+    margin-bottom: 5%;
+    background-color: rgba(201, 160, 109, 0.637) ;
+}
+#subject{
+    padding: 7px;
+    color: grey;
+    background-color: rgb(228, 183, 129);
+}
+#form h1:hover{
+    color: rgb(121, 77, 25);
+    cursor: pointer;
+}
+.button{
+    background-color: rgb(228, 183, 129);
+    border: 8px solid rgba(189, 120, 56, 0.623);
+    padding: 1%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#storehead:hover{
+    color: rgba(121, 78, 25, 0.76);
+    cursor: pointer;
+}
+.heading1{
+    margin-left: 25%;
+}
+h3:hover{
+    color: rgb(121, 77, 25);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: rgb(100, 51, 16);
+}
+a:hover{
+    color: rgb(145, 85, 11);
+    cursor: pointer;
+}

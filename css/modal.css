@@ -1,0 +1,8 @@
+#slctbtn{
+    margin-left: 30%;
+    padding: 3%;
+    width: 40%;
+}
+.btn-close{
+    z-index: 999;
+}

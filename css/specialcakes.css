@@ -1,0 +1,7 @@
+h6:hover{
+    color: rgb(107, 78, 24) !important ;
+}
+#cardhead:hover{
+    color: rgb(165, 108, 42) ;
+    cursor: pointer;
+}

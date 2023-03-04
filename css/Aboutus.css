@@ -1,0 +1,56 @@
+body
+{
+    cursor: pointer;
+    text-align: center;
+    font-family: lucida handwriting;
+    background-size: cover;
+    background-position: top;
+}
+#about-gif{
+    margin-left: 10%;
+}
+.bakegif{
+    width: 1108px;
+}
+#para{ 
+    background-color: transparent;
+    color: rgb(82, 53, 10);
+    text-align: center;
+    font-weight: 800;
+    font-size: larger;
+}
+h1{
+  margin-top: 2%;
+  font-weight: 900;
+  font: 10rem;
+}
+video{
+    border: 7px solid rgb(165, 111, 44);
+    border-style: dotted;
+}
+h2{
+    color: rgb(82, 53, 10);
+}
+h3:hover{
+    color: rgb(165, 112, 68);
+    font-size: 3rem;
+    
+}
+h2:hover{
+    color: rgb(165, 112, 68);
+    
+}
+h1:hover{
+    color: rgb(165, 112, 68);
+}
+#aboutpara{
+    margin-bottom: 10%;
+    font-size: larger;
+}
+#aboutpara:hover{
+    color: rgb(165, 112, 68);
+}
+#last{
+    margin-bottom: 9%;
+    font-size: 2.3rem;
+}
