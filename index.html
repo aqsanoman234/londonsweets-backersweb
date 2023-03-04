@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- bootstrap js  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- bootstrap css  -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/modal.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="icon" href="images/logo1.png">
+  <title>
+    Home-London Sweets And Bakers</title>
+</head>
+<body>
+  <!-- modal form  -->
+  <button type="button" style="display: none;" id="modalBtn" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ModalForm">
+  </button>
+<div class="modal fade"  id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content ">
+        <div class="modal-body bg-*">
+            <button type="button" class="btn-close btn-close-dark bg-light" data-bs-dismiss="modal" aria-label="Close" ></button>
+            <div class="myform bg-*">
+                <h1 class="text-center">Select Your Location</h1>
+                <form>
+                    <div class="mb-3 mt-4">
+                        <label for="exampleInputEmail1" class="form-label">Select City</label>
+                        <select class="form-select" id="city" aria-label="Default select example">
+                          <option selected>Select your city</option>
+                          <option value="karachi">Karachi</option>
+                          <option value="lahore">Lahore</option>
+                          <option value="islamabad">Islamabad</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 mt-4">
+                      <label for="exampleInputEmail1" class="form-label">Select Area</label>
+                      <select class="form-select" id="area" aria-label="Default select example">
+                        <option selected>Select your area (Only For Karachi)</option>
+                        <option value="1">Gulshan-e-iqbal</option>
+                        <option value="2">Defence</option>
+                        <option value="3">North Nazimabad</option>
+                      </select>
+                      <div class="text-center">
+                        <p id="er" class="text-dark"></p>
+                      </div>
+                  </div>
+                    <!-- <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div> -->
+                    <button type="button" class="btn btn-light mt-3" data-bs-dismiss="" id="slctbtn">SELECT</button>
+                    <!-- <p>Not a member? <a href="#">Signup now</a></p> -->
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+  <!-- modal form end  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-*" id="navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="brand" href="#"><img id="logo" src="images/logo1 (2).png" alt="logo"></a>
+      <button class="navbar-toggler bt-tog" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Aboutus.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="specialcakes.html">Special&nbspcakes</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html"><img class="logo" src="images/logo1.png" alt="logo"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="gifthamper.html">Gift&nbspHamppers</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="bakery.html">Bakery items</a></li>
+              <li><a class="dropdown-item" href="sweetcard.html">Sweets items</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contact.html">Contact&nbspUs</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </nav>
+  <!-- nav end -->
+  <!-- slider start -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/slider1.jpg" class="d-block w-100" alt="..." style="height: 600px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-weight: bolder;">Fresh Bakery Products </h5>
+          <p style="font-weight: bolder; margin-right: 34%;">100% NATURAL, FRESH BAKED GOODS.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/slider2.jpg" class="d-block w-100" alt="..." style="height: 600px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-weight: bolder;">Fresh Bakery Products</h5>
+          <p style="font-weight: bolder; margin-right: 34%;">100% NATURAL, FRESH BAKED GOODS.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/slider3.jpg" class="d-block w-100" alt="..." style="height: 551px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-weight: bolder;">Fresh Bakery Products</h5>
+          <p style="font-weight: bolder; margin-right: 34%;">100% NATURAL, FRESH BAKED GOODS.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- slider end -->
+  <!-- cards start -->
+  <br>
+  <center>
+    <h1 class="heading1">BAKERY ITEMS </h1>
+    <center>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div data-aos="fade-up" class="col-sm-4 py-3 py-sm-0">
+            <div class="card box-shadow" style="width: 80%;">
+              <img src="./images/Screenshot.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CUPCAKES</h5>
+                
+                <h6  style="color: rgb(228, 178, 85);"> Milk stawberry crème & lots of love! <br>$2 each</h6>
+                <a id="cupbtnV" href="bakery.html" class="btn btn-primary">View more...</a>
+              </div>
+            </div>
+          </div>
+          <div  data-aos="fade-up"   class="col-sm-4 py-3 py-sm-0">
+            <div class="card box-shadow" id="mithai2" style="width: 80%;">
+              <img src="./images/bakeryimage/samosa.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SAMOSAS</h5>
+                <h6  style="color: rgb(228, 178, 85);"> Keema stuffed deep fried snack 
+                  <br> $1.50 each</h6>
+                <a id="browniebtn" href="orderplace.html" class="btn btn-primary">View more...</a>
+              </div>
+            </div>
+          </div>
+          <div  data-aos="fade-up"   class="col-sm-4 py-3 py-sm-0">
+            <div class="card box-shadow" id="mithai3" style="width: 80%;">
+              <img src="./images/bakeryimage/Chicken buns.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> <br> CHICKEN BUNS</h5>
+                <h6 style="color: rgb(228, 178, 85);" > <br>  Buns filled with spicy chickens.
+                  <br>$2.50 each</h6>
+                <br><a id="cakebtn" href="#" class="btn btn-primary">View more...</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- second row -->
+      <br>
+      <center>
+        <h1 class="heading2">SWEET ITEMS </h1>
+        <center>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div data-aos="fade-up"  class="col-sm-4 py-3 py-sm-0">
+                <div class="card box-shadow" id="sweet1" style="width: 80%;">
+                  <img src="./images/SCB.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"> BESAN LADU</h5>
+                    <h6  style="color: rgb(228, 178, 85);">Sweet gram flour balls made from besan <br> $5.55 per kg</h6>
+                    <a  id="ladubtn" href="sweetcard.html" class="btn btn-primary">View more...</a>
+                  </div>
+                </div>
+              </div>
+              <div data-aos="fade-up" class="col-sm-4 py-3 py-sm-0">
+                <div class="card box-shadow" id="sweet2" style="width: 80%;">
+                  <img src="./images/milk-peda.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">MILK PEEDA</h5>
+                    <h6  style="color: rgb(228, 178, 85);"> Made from purest milk and khoya! <br> $6 per kg</h6>
+                    <a id="Peedabtn"  href="sweetcard.html" class="btn btn-primary">View more...</a>
+                  </div>
+                </div>
+              </div>
+              <div data-aos="fade-up" class="col-sm-4 py-3 py-sm-0">
+                <div class="card box-shadow" id="sweet3" style="width: 80%;">
+                  <img src="./images/halwa habshi.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">HABSHI HALWA</h5>
+                    <h6  style="color: rgb(228, 178, 85);">Made from sprouted wheat,asli ghee and nuts! <br>$9 per kg</h6>
+                    <a id="halwabtn" href="sweetcard.html" class="btn btn-primary">View more...</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- cards end -->
+          <footer data-aos="zoom-in"> 
+            <h5 class="heading">Book your cakes for any occasion! Call us now for Delivery</h5>
+            <div class="icon">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+              <p>&copy;ALL COPYRIGHTS RESERVED</p>
+            </div>
+          </footer>
+          <script>
+            AOS.init();
+          </script>
+
+          <script>
+            $("#slctbtn").click(function(){
+              // document.write($("#city").val());
+              if($("#city").val() == "Select your city" || $("#area").val() == "Select your area (Only For Karachi)"){
+                $("#er").text("Please select city and area");
+              }
+              else{
+                $(".btn-close").click();
+              }
+            })
+          </script>
+</body>
+</html>   
